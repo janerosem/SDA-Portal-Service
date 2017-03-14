@@ -1,0 +1,38 @@
+<div>
+    <div layout-gt-md="row">
+        <panel-widget flex title="Current Website sessions" template="app/views/partials/websiteSessions.html"
+                      class="fixed-height-widget"
+                      main-figure="vm.model.websiteSessions.current">
+        </panel-widget>
+        <panel-widget flex title="Current Visitors" template="app/views/partials/currentVisitors.html"
+                      class="fixed-height-widget"
+                      main-figure="vm.model.currentVisitors.count">
+        </panel-widget>
+
+        <panel-widget flex title="Bounce rate (%)" template="app/views/partials/bounceRate.html"
+                      class="fixed-height-widget"
+                      main-figure="vm.model.bounceRate.current" sub-figure="vm.model.bounceRate.yesterday"
+                      direction="vm.model.bounceRate.increase">
+        </panel-widget>
+
+    </div>
+    <div layout-gt-md="row">
+        <panel-widget flex title="FB page views" template="app/views/partials/fbPageViews.html"
+                      class="fixed-height-widget" main-figure="vm.model.fbPageViews.current"
+                      sub-figure="vm.model.fbPageViews.lastMonth" direction="vm.model.fbPageViews.increase">
+        </panel-widget>
+        <panel-widget flex title="Twitter followers" template="app/views/partials/twitterFollowers.html"
+                      class="fixed-height-widget" main-figure="vm.model.twitterFollowers.current"
+                      sub-figure="vm.model.twitterFollowers.change" direction="vm.model.twitterFollowers.increase">
+        </panel-widget>
+        <panel-widget flex title="News letter open rate" template="app/views/partials/newsLetterOpenRate.html"
+                      class="fixed-height-widget" main-figure="vm.model.newsLetterOpenRate.current"
+                      sub-figure="vm.model.newsLetterOpenRate.change" direction="vm.model.newsLetterOpenRate.increase">
+        </panel-widget>
+
+    </div>
+
+    <div layout-gt-md="row">
+        <panel-widget flex title="Subscribers count variation in the current year" template="app/views/partials/subscribers.html" options="true"></panel-widget>
+    </div>
+</div>

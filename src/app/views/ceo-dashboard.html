@@ -1,0 +1,29 @@
+<div>
+    <div layout-gt-md="row">
+      <panel-widget flex title="Annual Revenue RunRate Vs Yesterday($)" template="app/views/partials/runRate.html" class="fixed-height-widget"
+                    main-figure="vm.model.runRate.current" sub-figure="vm.model.runRate.yesterday" direction="vm.model.runRate.increase">
+      </panel-widget>
+
+      <panel-widget flex title="Revenue Churn this month (%)" template="app/views/partials/revenueChurn.html" class="fixed-height-widget"
+                      main-figure="vm.model.revenueChurn.current" sub-figure="vm.model.revenueChurn.yesterday" direction="vm.model.revenueChurn.increase">
+      </panel-widget>
+
+      <panel-widget flex title="Net Promoter Score Vs Last Month" template="app/views/partials/netPromoterScore.html" class="fixed-height-widget"
+                      main-figure="vm.model.netPromoterScore.current" sub-figure="vm.model.netPromoterScore.lastMonth" direction="vm.model.netPromoterScore.increase">
+      </panel-widget>
+
+      <panel-widget flex title="Sales increase this month (%)" template="app/views/partials/salesIncrease.html" class="fixed-height-widget"
+                      main-figure="vm.model.salesIncrease.current" sub-figure="vm.model.salesIncrease.lastMonth" direction="vm.model.salesIncrease.increase">
+      </panel-widget>
+    </div>
+
+    <div layout-gt-md="row">
+      <panel-widget flex title="Performance" template="app/views/partials/performance.html" options="true"></panel-widget>
+    </div>
+    <div layout-gt-md="row">
+        <panel-widget flex title="Monthly Leads Created vs Goal" template="app/views/partials/monthlyLeads.html">
+        </panel-widget>
+        <panel-widget flex title="Monthly Opportunities Created vs Goal" template="app/views/partials/monthlyOpportunities.html">
+        </panel-widget>
+    </div>
+</div>
